@@ -37,7 +37,7 @@ require("connect.php");
 
 <script type="text/javascript">
 
-var server = "http://localhost/tourism_bkt/kuliner_bkt/";
+var server = "http://40.65.191.194/isii_tb/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
