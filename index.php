@@ -2601,35 +2601,7 @@ function viewprice()
                     <span>View Culinary</span>
                   </a>
                   <ul class="sub">
-                    <li class="sub-menu">
-                      <a href="javascript:;" >
-                        <i class="fa fa-globe"></i>
-                        <span>Sub District</span>
-                      </a>
-                      <ul class="sub">
-                        <div class=" form-group"> <br>
-                          <!-- <label style="color: white;">Sub District</label> -->
-                          <select class="form-control select2" style="width: 100%; height: 70%;" id="carikecamatankul">
-                            <option value="">-Choose-</option>
-                            <?php
-                              include("connect.php"); 
-                              $carikecamatankul=pg_query("select * from district order by name ASC");
-                              while($rowcarikecamatankul = pg_fetch_assoc($carikecamatankul))
-                              {
-                                echo"<option value=".$rowcarikecamatankul['id'].">".$rowcarikecamatankul['name']."</option>";
-                              }
-                            ?>
-                          </select>
-                                              
-                        </div>
-                        
-                        <div class=" form-group">
-                          <button type="submit" class="btn btn-info btn-block btn-flat" id="kul_kec" onclick='viewkecamatankul();'>Search</button>
-                        </div>
-                     </ul>
-                    </li>
-
-
+                    
                     <li class="sub-menu">
                       <a href="javascript:;" onclick="selectkul()">
                        <i class="fa fa-cutlery"></i>
